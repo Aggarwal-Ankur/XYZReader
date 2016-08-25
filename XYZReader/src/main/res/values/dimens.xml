@@ -1,4 +1,7 @@
 <resources>
+    <!-- Main List -->
+    <dimen name="main_list_toolbar_size">216dp</dimen>
+
     <!-- detail -->
     <dimen name="detail_title_text_size">32sp</dimen>
     <dimen name="detail_body_text_size">22sp</dimen>

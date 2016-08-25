@@ -49,7 +49,7 @@ public class ArticleListActivity extends AppCompatActivity implements
 
         CollapsingToolbarLayout collapsingToolbar =
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
-        collapsingToolbar.setTitle("XYZ Reader");
+        collapsingToolbar.setTitle(getResources().getString(R.string.app_name));
 
         mRecyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         getLoaderManager().initLoader(0, null, this);
