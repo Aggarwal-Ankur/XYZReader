@@ -9,4 +9,7 @@
 
     <string name="up">Up</string>
 
+    <!-- Error string -->
+    <string name="load_error">Error Loading cursor</string>
+
 </resources>
