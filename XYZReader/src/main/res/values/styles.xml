@@ -30,12 +30,12 @@
 
 
     <!-- Used in collpasing toolbar -->
-    <style name="main_toolbar_expanded" parent="@android:style/TextAppearance.Medium">
-        <item name="android:textColor">#fff</item>
-        <item name="android:textStyle">normal</item>
+    <style name="toolbar_expanded" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">0sp</item>
     </style>
 
-    <style name="main_toolbar_collapsed" parent="@android:style/TextAppearance.Medium">
+    <style name="toolbar_collapsed" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">#fff</item>
         <item name="android:textStyle">bold</item>
     </style>

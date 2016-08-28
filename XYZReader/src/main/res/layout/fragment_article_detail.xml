@@ -20,20 +20,25 @@
             app:contentScrim="?attr/colorPrimary"
             app:expandedTitleMarginEnd="64dp"
             app:expandedTitleMarginStart="48dp"
+            app:collapsedTitleTextAppearance="@style/toolbar_collapsed"
+            app:expandedTitleTextAppearance="@style/toolbar_expanded"
             app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
             <LinearLayout
+                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
             <ImageView
+                android:fitsSystemWindows="true"
                 android:id="@+id/photo"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/main_list_toolbar_size"
                 android:scaleType="centerCrop" />
 
             <com.example.xyzreader.ui.MaxWidthLinearLayout
+                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fff"
@@ -80,8 +85,10 @@
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar"
+                android:fitsSystemWindows="true"
                 android:layout_width="match_parent"
                 android:layout_height="?attr/actionBarSize"
+                android:layout_marginTop="@dimen/title_top_margin"
                 app:layout_collapseMode="pin"
                 app:navigationIcon="?homeAsUpIndicator"
                 app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
