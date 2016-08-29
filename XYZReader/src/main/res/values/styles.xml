@@ -38,6 +38,7 @@
     <style name="toolbar_collapsed" parent="@android:style/TextAppearance.Medium">
         <item name="android:textColor">#fff</item>
         <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">end</item>
     </style>
 
 </resources>

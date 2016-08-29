@@ -21,6 +21,7 @@ import android.text.format.DateUtils;
 import android.text.method.LinkMovementMethod;
 import android.util.Log;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -149,6 +150,14 @@ public class ArticleDetailFragment extends Fragment implements
             CollapsingToolbarLayout collapsingToolbar =
                     (CollapsingToolbarLayout) mRootView.findViewById(R.id.collapsing_toolbar);
             collapsingToolbar.setTitle(mCursor.getString(ArticleLoader.Query.TITLE));
+
+            Toolbar toolbar = (Toolbar) mRootView.findViewById(R.id.toolbar);
+            toolbar.setNavigationOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    getActivity().onBackPressed();
+                }
+            });
 
             ImageLoaderHelper.getInstance(getActivity()).getImageLoader()
                     .get(mCursor.getString(ArticleLoader.Query.PHOTO_URL), new ImageLoader.ImageListener() {
